@@ -1,0 +1,137 @@
+real a,b, ca
+caracter c,opcion3
+cadena[20]n
+cadena[6]x
+entero opcion2, base, h, area, t
+
+	inicio
+		escriba "Digite su nombre"
+		llamar nueva_linea
+		lea n
+		llamar nueva_linea
+		escriba "bienvenido", n
+		llamar nueva_linea
+		escriba "ingrese un caracter del menu"
+		llamar nueva_linea
+		escriba "s para la suma"
+		llamar nueva_linea
+		escriba "r para la resta"
+		llamar nueva_linea
+		escriba "caracter distinto a r,s para terminar"
+		llamar nueva_linea
+		
+		lea c
+		
+			caso c 
+			
+				's': escriba "vamos a sumar"
+				llamar nueva_linea
+				escriba "ingrese el primer nuemro"
+				llamar nueva_linea 
+				lea a
+				llamar nueva_linea
+				escriba "ingrese el segundo numero"
+				llamar nueva_linea
+				lea b
+				llamar nueva_linea
+				ca<-a+b
+				llamar nueva_linea
+				escriba "la suma es", ca
+				
+				
+				'r': escriba "2 para otra opcion"
+				llamar nueva_linea
+				escriba "1 para el area de un triangulo"
+				llamar nueva_linea
+				escriba "50 para el area de una cuadrado"
+				llamar nueva_linea
+				escriba "8 para el area de un circulo"
+				llamar nueva_linea
+				lea opcion2
+					caso  opcion2
+					
+					
+					 1: escriba "ingrese el numero para la base"
+						llamar nueva_linea
+						lea base
+						llamar nueva_linea
+						escriba "ingrese el numero de la altura"
+						llamar nueva_linea
+						lea h
+						llamar nueva_linea
+						area<-(base*h)/2 
+						llamar nueva_linea
+						escriba "la altura es", area
+						
+					 
+					 50: escriba "ingre el numero de uno de sus lados"
+					 	llamar nueva_linea
+					 	lea a
+					 	llamar nueva_linea
+					 	area<-a^2
+					 	llamar nueva_linea
+					 	escriba "el area es",  area
+					 	
+					 8: escriba "ingrese el radio del circulo"
+					 llamar nueva_linea
+					 lea b
+					 llamar nueva_linea
+					 area<- 3.14*b^2
+					 llamar nueva_linea
+					 escriba "el area del circulo es", area
+					 
+					 2: escriba "L para la contraseña"
+					 	llamar nueva_linea
+					 	escriba "h para el nombre"
+					 	llamar nueva_linea
+					 	escriba "p para el dia"
+					 	llamar nueva_linea
+					 	lea opcion3
+					 		caso opcion3
+					 			
+					 			'L': 
+					 			escriba "ingrese una contraseña"
+					 			llamar nueva_linea
+					 			lea t 
+					 			llamar nueva_linea
+					 				mientras (t<>123) haga 
+						 				escriba "escriba contraseña incorrecta"
+						 				llamar nueva_linea
+						 				lea t
+					 				fin mientras
+					 				escriba "contraseña correcta =)"
+					 				
+					 			'h': escriba "Cual es su nombre"
+					 				lea x
+					 				llamar nueva_linea
+					 				escriba "su nombre es", x
+					 				
+					 			'p': escriba "hoy es jueves 15 de agosto"
+					 			
+					 			fin caso
+					 				
+					 
+					llamar nueva_linea
+					 
+					 sino : escriba  "opcion no escontrada"
+					 
+					 
+					 
+					 
+					 
+						
+					fin caso
+					
+
+		
+		
+		
+		
+		llamar nueva_linea
+		sino : escriba "opcion invalida"
+		
+		fin caso
+		
+		escriba "Gracias por usar la aplicacion ", n
+
+fin
